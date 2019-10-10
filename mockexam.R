@@ -101,6 +101,7 @@ The read_csv() function also has an na argument, which allows you to specify val
 3) under the column showstopper there are some empty cells. These empty fields are not a problem, though we have to fill them correctly with an na. To the previous chunk add the command na = c("", "NA", "UNKNOWN")) after the declaration of the file you want to upload. 
 
 ```{r}
+bakeoff <- read_csv("bakeoff.csv", na = c("", "NA", "UNKNOWN"))
 ```
 
 
